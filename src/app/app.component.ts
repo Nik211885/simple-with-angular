@@ -18,4 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.products = this.productService.getProduct();
   }
+  searchProductByName(query: string){
+    this.products = this.productService.filterByNameProduct(query);
+  }
 }

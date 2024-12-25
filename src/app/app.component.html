@@ -1,4 +1,4 @@
-<app-header/>
+<app-header (searchEvent)="searchProductByName($event)"/>
 <div class="main">
   <div class="products-grid">
     <app-product [product]="p" *ngFor="let p of products"/>

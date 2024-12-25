@@ -9,9 +9,9 @@
   </div>
 
   <div class="amazon-header-middle-section">
-    <input [(ngModel)]="search" class="search-bar" type="text" placeholder="Search">
+    <input (input)="onSearchProductByName()" [(ngModel)]="search" class="search-bar" type="text" placeholder="Search">
 
-    <button class="search-button">
+    <button (click)="onSearchProductByName()" class="search-button">
       <img class="search-icon" src="images/icons/search-icon.png">
     </button>
   </div>
